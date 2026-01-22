@@ -27,6 +27,7 @@ form{
 }
 
 div{
+    
     margin-top: 50px;
     background-color: #CB9173;
     padding: 30px;
@@ -38,6 +39,9 @@ div h3{
     text-align: center;
     margin-bottom: 40px;
 }
+div input{
+    margin-left: 40px;
+}
 
 div input[type=text]{
     width: 60%;
@@ -47,5 +51,4 @@ div input[type=text]{
 
 div input[type=range]{
     min-width: 60%;
-    
 }

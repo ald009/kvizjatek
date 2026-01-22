@@ -4,33 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script href="feketerigo"></script>
+    <script src="feketerigo.js"></script>
     <title>Kvízjáték</title>
 </head>
 <body>
     <header><h1>Legjobb játék a világon!</h1></header>
 
     <main>
-        <form action="">
+        <form action="None">
         <div>
             <h3>Mi az anyád neve?</h3>
 
-            <input type="text">
+            <input type="text" id="anyad"><br><br>
+            <label id="1" for=""></label>
         </div>
         
         <div>
             <h3>Hányszor kaptál eddig agyvérzést matek órán?</h3>
 
-            <input id="range" type="range" min="0" onchange="agy()" max="250">
-            <label id="agy" for="">123</label>
+            <input id="matekrange" type="range" value="0" min="0" oninput="agy()" max="250">
+            <label id="agy" for="">0</label><br><br>
+            <label id="2" for=""></label>
         </div>
+
+        <div>
+            <h3>Mi Erik rangja Rocket Goal.io-n?</h3>
+
+            <input type="radio" id="ssl" name="erik">
+            <label for="">Supersonic Legend</label> <br>
+
+            
+            <input type="radio" id="plat" name="erik">
+            <label for="">Platinum</label> <br>
+
+            
+            <input type="radio" id="dia" name="erik">
+            <label for="">Diamond</label> <br>
+
+            
+            <input type="radio" id="gold" name="erik">
+            <label for="">Champ</label> <br><br>
+
+            <label for="" id="3"></label>
+
+        </div>
+
+
+        <div>
+            <h3>Mi Barta Búlcsú röpis mezszáma?</h3>
+
         
+            <input type="number" min="1" max="20" id="bulcsuszam">
+            <label for="">(1-20)</label><br><br>
+            <label for="" id="4"></label>
 
+        </div>
 
-
+        <input type="button" onclick="sub()">
 
         </form>
     </main>
+
     
 </body>
 </html>
