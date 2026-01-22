@@ -7,13 +7,28 @@ function agy(){
 
 var helyes = 0;
 function sub(){
+
+
     if (document.getElementById("anyad").value.trim().toLowerCase() === "anyad")
     {
-        document.getElementById("1").innerHTML = "Helyes!";
-        helyes += 1;
+        jo("1");
     }
     else
     {
-        document.getElementById("1").innerHTML = "Rossz válasz!"
+        rossz("1");
     }
+
+
+}
+
+function jo(hany){
+        document.getElementById(hany).innerHTML = "Helyes!";
+        document.getElementById(hany).style.color = "green";
+        helyes += 1;
+}
+
+function rossz(hany){
+        document.getElementById(hany).innerHTML = "Rossz válasz!";
+        document.getElementById(hany).style.color = "red";
+        
 }
