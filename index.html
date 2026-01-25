@@ -56,11 +56,53 @@
         
             <input type="number" min="1" max="20" id="bulcsuszam">
             <label for="">(1-20)</label><br><br>
-            <h3 id="4"></h3>
+            <h2 id="4"></h2>
 
         </div>
 
-        <input type="button" onclick="sub()">
+        <div>
+            <h3>szeretnek a szuleid?</h3>
+            <input type="radio" name="szeretnek" id="majdnem">
+            <label for="">igen</label><br>
+
+            <input type="radio" name="szeretnek" id="utal">
+            <label for="">nem</label><br>
+
+            <input type="radio" name="szeretnek" id="idk">
+            <label for="">idk bro</label><br>
+
+            <h2 id="5"></h2>
+        </div>
+
+        <div>
+            <h3>kikáne végezni a singed playereket?</h3><br>
+
+
+            <input type="radio" name="singed" id="aha">
+            <label for="">igen</label><br>
+
+            <input type="radio" name="singed" id="nah">
+            <label for="">nem</label><br>
+
+            
+
+            <h2 id="6"></h2>
+        </div>
+
+
+        <div>
+            <h3>mennyiretetszett a kvíz játék?</h3>
+            <input type="range" id="tetszik" min="0" max="10" value="0" oninput="tetsz()">
+            <label for="" id="tetsz">0</label><br>
+            <h2 id="7"></h2>
+
+
+        </div>
+
+        <div class="kesz">
+            <h1>Kész --><input type="button" onclick="sub()"></div></h1>
+            
+        
 
         </form>
     </main>

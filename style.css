@@ -52,3 +52,7 @@ div input[type=text]{
 div input[type=range]{
     min-width: 60%;
 }
+.kesz{
+    padding: 5px;
+    
+}

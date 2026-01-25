@@ -4,6 +4,9 @@ function agy(){
     document.getElementById("agy").innerHTML = document.getElementById("matekrange").value;
 }
 
+function tetsz(){
+    document.getElementById("tetszik").innerHTML = document.getElementById("tetsz").value;
+}
 function jo(hany){
         document.getElementById(hany).innerHTML = "Helyes!";
         document.getElementById(hany).style.color = "green";
@@ -40,7 +43,7 @@ function sub(){
         rossz("2");
     }
 
-    if (document.getElementById("dia").value === true)
+    if (document.getElementById("dia").checked === true)
     {
         jo("3");
     }   
@@ -48,5 +51,36 @@ function sub(){
     {
         rossz("3");
     }
+
+    if (document.getElementById("utal").checked === true)
+    {
+        jo("5");
+    }
+    else
+    {
+        rossz("5");
+    }
+
+    if (document.getElementById("aha").checked === true)
+    {
+        jo("6");
+    }
+    else
+    {
+        rossz("6");
+    }
+
+    if (document.getElementById("tetszik").value > 0)
+    {
+        jo("7");
+    }
+    else
+    {
+        rossz("7");
+    }
+        
+
+
+
 
 }
