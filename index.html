@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="feketerigo.js"></script>
     <title>Kvízjáték</title>
 </head>
 <body>
-    <header><h1>Legjobb játék a világon!</h1></header>
+    <header><h1>A legjobb kvízjáték a világon!</h1></header>
 
     <main>
-        <form action="None">
+        <form action="javascript:void(0)">
         <div>
             <h3>Mi az anyád neve?</h3>
 
@@ -61,52 +60,86 @@
         </div>
 
         <div>
-            <h3>szeretnek a szuleid?</h3>
+            <h3>Szeretnek a szüleid?</h3>
             <input type="radio" name="szeretnek" id="majdnem">
-            <label for="">igen</label><br>
+            <label for="">Igen</label><br>
 
             <input type="radio" name="szeretnek" id="utal">
-            <label for="">nem</label><br>
+            <label for="">Nem</label><br>
 
             <input type="radio" name="szeretnek" id="idk">
-            <label for="">idk bro</label><br>
+            <label for="">Mittomén</label><br>
 
             <h2 id="5"></h2>
         </div>
 
         <div>
-            <h3>kikáne végezni a singed playereket?</h3><br>
+            <h3>Kikéne végezni a Singed playereket?</h3><br>
 
 
             <input type="radio" name="singed" id="aha">
-            <label for="">igen</label><br>
+            <label for="">Igen</label><br>
 
             <input type="radio" name="singed" id="nah">
-            <label for="">nem</label><br>
+            <label for="">Nem</label><br>
 
-            
+            <img src="RfwcQO6.png" alt="Singed"><br>
 
             <h2 id="6"></h2>
         </div>
 
 
         <div>
-            <h3>mennyiretetszett a kvíz játék?</h3>
-            <input type="range" id="tetszik" min="0" max="10" value="0" oninput="tetsz()">
-            <label for="" id="tetsz">0</label><br>
+            <h3>Megpaskolnád Jaksa Márkó hátát?</h3>
+
+            <input type="radio" name="jaksa" id="paskolom">
+            <label for="">Igen</label><br>
+            <input type="radio" name="jaksa" id="nempaskolom">
+            <label for="">Nem</label><br>
+            <input type="radio" name="jaksa" id="ketszeris">
+            <label for="">Kétszer is</label><br>
             <h2 id="7"></h2>
 
 
         </div>
 
+        <div>
+            <h3>Kezdesz kopaszodni?</h3>
+
+            <input type="radio" name="kopasz" id="kopaszja">
+            <label for="">Igen</label><br>
+            <input type="radio" name="kopasz" id="kopasznem">
+            <label for="">Nem</label><br>
+            <img src="gellen.jpg" alt="Gellén"><br>
+            <h2 id="8"></h2>
+
+        </div>
+
+        <div>
+            <h3>Egy tizes skálán hanyasra értékelnéd a tokányt?</h3>
+
+            <input id="tokany" type="range" value="0" min="-10" max="10" oninput="document.getElementById('tokanylabel').innerHTML = this.value">
+            <label id="tokanylabel" for="">0</label><br><br>
+            <h2 id="9"></h2>
+
+        </div>
+
+        <div>
+            <h3>Mi a HEX száma a Fidesznek?</h3>
+            <input type="color" id="szin" value="#C6B836">
+            <label for="szin">&nbsp&nbsp Vajon mi lehet az?</label><br>
+            <img src="fidesz.png" alt="Fidesz"><br>
+            <h2 id="10"></h2>
+        </div>
+
         <div class="kesz">
-            <h1>Kész --><input type="button" onclick="sub()"></div></h1>
+            <button onclick="sub()">Kész</button>
             
-        
+        </div>
 
         </form>
     </main>
 
-    
+    <script src="feketerigo.js"></script>
 </body>
 </html>
