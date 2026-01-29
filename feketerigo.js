@@ -55,7 +55,7 @@ function sub(){
         rossz("2");
     }
 
-    if (document.getElementById("dia").checked === true)
+    if (document.getElementById("gold").checked === true)
     {
         jo("3");
     }   
